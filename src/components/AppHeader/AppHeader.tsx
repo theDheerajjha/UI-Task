@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuth } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import './AppHeader.css';
 
 interface AppHeaderProps {
@@ -10,6 +11,12 @@ interface AppHeaderProps {
 
 const AppHeader: React.FC<AppHeaderProps> = ({ showBackToHome, onBackToHome, onLogin }) => {
   const { user, signOut } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    signOut();
+    navigate('/');
+  };
 
   return (
     <header className="app-header">
@@ -24,7 +31,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({ showBackToHome, onBackToHome, onL
           ) : user ? (
             <>
               <span className="app-header-user">Hi, {user.username}</span>
-              <button className="app-header-action" onClick={signOut}>Log Out</button>
+              <button className="app-header-action" onClick={handleLogout}>Log Out</button>
             </>
           ) : (
             <button className="app-header-action" onClick={onLogin}>
