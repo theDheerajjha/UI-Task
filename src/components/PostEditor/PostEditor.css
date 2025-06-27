@@ -1,5 +1,5 @@
 .post-editor {
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   background: #fff;
   border-radius: 18px;
@@ -129,4 +129,46 @@
 .post-editor-publish-icon {
   display: inline-block;
   transform: rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  .post-editor {
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px 4px 10px 4px;
+    margin-bottom: 18px;
+  }
+  .post-editor-textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .post-editor-publish-button {
+    font-size: 15px;
+    padding: 7px 12px;
+    border-radius: 6px;
+  }
+  .post-editor-toolbar {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .post-editor-toolbar::-webkit-scrollbar {
+    display: none;
+  }
+  .post-editor-toolbar-button,
+  .post-editor-select {
+    display: inline-block;
+    min-width: 32px;
+    margin-right: 2px;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .post-editor-toolbar-button.delete {
+    margin-left: 4px;
+  }
 } 
