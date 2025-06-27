@@ -35,7 +35,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return false;
   };
 
-  const signUp = async (email: string, username: string, password: string): Promise<boolean> => {
+  const signUp = async (email: string, username: string): Promise<boolean> => {
     // For demo, just allow any signup and "log in" the user
     setUser({ email, username });
     return true;

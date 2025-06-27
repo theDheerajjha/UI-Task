@@ -24,7 +24,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({ showBackToHome, onBackToHome, onL
           ) : user ? (
             <>
               <span className="app-header-user">Hi, {user.username}</span>
-              <button className="app-header-action" onClick={signOut}>Sign Out</button>
+              <button className="app-header-action" onClick={signOut}>Log Out</button>
             </>
           ) : (
             <button className="app-header-action" onClick={onLogin}>
