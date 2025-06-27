@@ -1,0 +1,124 @@
+.post-editor {
+  width: 100%;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60,60,60,0.06);
+  border: 1.5px solid #ededed;
+  margin-bottom: 32px;
+  padding: 24px 24px 20px 24px;
+}
+
+.post-editor-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.post-editor-select {
+  border: none;
+  background: #f4f4f4;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 15px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.post-editor-toolbar-button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.post-editor-toolbar-button:hover {
+  background: #f4f4f4;
+}
+
+.post-editor-toolbar-button.italic {
+  font-style: italic;
+}
+
+.post-editor-toolbar-button.underline {
+  text-decoration: underline;
+}
+
+.post-editor-toolbar-button.delete {
+  background: #f4f4f4;
+  border-radius: 6px;
+  margin-left: auto;
+  padding: 4px;
+}
+
+.post-editor-textarea {
+  width: 100%;
+  min-height: 60px;
+  border: none;
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  resize: none;
+  margin-bottom: 12px;
+  font-family: inherit;
+}
+
+.post-editor-textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.post-editor-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.post-editor-action-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.post-editor-action-button:hover {
+  background: #f4f4f4;
+  transform: scale(1.1);
+}
+
+.post-editor-publish-button {
+  margin-left: auto;
+  background: #4f5be8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.post-editor-publish-button:hover:not(:disabled) {
+  background: #3f4bd8;
+}
+
+.post-editor-publish-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.post-editor-publish-icon {
+  display: inline-block;
+  transform: rotate(-45deg);
+} 

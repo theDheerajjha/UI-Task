@@ -1,0 +1,91 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(60,60,60,0.04);
+  z-index: 100;
+  padding: 0;
+}
+
+.app-header-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px 12px 32px;
+  box-sizing: border-box;
+}
+
+.app-header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  gap: 8px;
+}
+
+.app-header-logo-icon {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 2.5px solid #111;
+  border-radius: 12px / 10px;
+  display: inline-block;
+  margin-right: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.app-header-logo-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 10px;
+  height: 4px;
+  background: #111;
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+}
+
+.app-header-action {
+  background: none;
+  border: none;
+  color: #4f5be8;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 8px;
+  text-decoration: underline;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-header-action:hover {
+  color: #222;
+}
+
+.app-header-user {
+  margin-right: 16px;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.feed-login-arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  transition: filter 0.2s;
+}
+
+.app-header-action:hover .feed-login-arrow-icon svg circle {
+  fill: #3f4bd8;
+} 

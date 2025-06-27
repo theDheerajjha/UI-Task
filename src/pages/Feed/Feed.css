@@ -1,0 +1,124 @@
+.feed-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.feed-header {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 40px 0;
+  box-sizing: border-box;
+}
+
+.feed-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  gap: 8px;
+}
+
+.feed-logo-icon {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.feed-user-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.feed-user-greeting {
+  font-size: 14px;
+  color: #000;
+}
+
+.feed-sign-out-button {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.feed-sign-out-button:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+.feed-auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feed-login-arrow-button {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 2px;
+  transition: color 0.2s;
+  outline: none;
+}
+
+.feed-login-arrow-button:hover,
+.feed-login-arrow-button:focus {
+  color: #4f5be8;
+  text-decoration: underline;
+}
+
+.feed-login-arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  transition: filter 0.2s;
+}
+
+.feed-login-arrow-button:hover .feed-login-arrow-icon svg circle {
+  fill: #3f4bd8;
+}
+
+/* Remove old sign-in and sign-up button styles if not used anymore */
+.feed-sign-in-button, .feed-sign-up-button {
+  display: none;
+}
+
+.feed-main {
+  width: 70vw;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.feed-posts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+} 

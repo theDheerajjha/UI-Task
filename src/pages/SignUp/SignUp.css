@@ -1,0 +1,148 @@
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px 0 40px;
+}
+
+.signup-logo {
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signup-logo-icon {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.signup-back-link {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.signup-back-link:hover {
+  color: #4f5be8;
+}
+
+.signup-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-form {
+  background: #f4f4f4;
+  border-radius: 24px;
+  padding: 40px;
+  min-width: 380px;
+  box-shadow: 0 0 0 8px #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-icon {
+  background: #ededed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.signup-icon span {
+  font-size: 24px;
+}
+
+.signup-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 8px 0 4px 0;
+  text-align: center;
+}
+
+.signup-subtitle {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.signup-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.signup-label {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ededed;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.signup-error {
+  color: red;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.signup-button {
+  width: 100%;
+  background: #4f5be8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signup-button:disabled {
+  cursor: not-allowed;
+}
+
+.signup-switch {
+  margin-top: 18px;
+  color: #888;
+  font-size: 15px;
+}
+
+.signup-switch-link {
+  color: #4f5be8;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.signup-switch-link:hover {
+  color: #3f4bd8;
+} 
