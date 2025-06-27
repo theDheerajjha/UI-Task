@@ -1,28 +1,69 @@
 
 ---
 
-## Quick Note
+# Mini Frontend Auth App
 
-This is a basic React project that includes modal-based authentication and uses a clean, organized folder structure. The main task was keeping the UI consistent and updating the imports after changing the structure.
+This is a simple frontend app built using React, TypeScript, and TailwindCSS. It includes a basic authentication flow and a feed page. No backend or real API is used.
 
 ---
 
-## Quick Start Guide
+## Live Preview
 
-1. Install the dependencies by running `npm install`.
-2. To start the development server, run `npm run dev`.
-3. To build the project for production, use `npm run build`.
-4. To preview the production build locally, run `npm run preview`.
+[Live App Link](https://your-live-link.com)
+
+## GitHub Repo
+
+[GitHub Repo](https://github.com/your-username/your-repo)
+
+---
+
+## Test Accounts
+
+```
+demo@example.com / password123  
+test@user.com / testpass
+```
+
+---
+
+## How to Run
+
+1. Install dependencies
+   `npm install`
+
+2. Start dev server
+   `npm run dev`
+
+3. Build for production
+   `npm run build`
+
+4. Preview production build
+   `npm run preview`
+
+---
+
+## Features
+
+* Feed page as landing
+* Auth modals open on interaction if user is not signed in
+* Sign In and Sign Up pages
+* Post input and publish button
+* Alerts for other actions not implemented
 
 ---
 
 ## Tech Used
 
 * React
-* React Router
 * TypeScript
 * Vite
-* CSS
+* TailwindCSS
+* React Router
 
 ---
+
+## Notes
+
+No UI libraries used. Basic animations are added with CSS. Code is modular and simple to follow.
+
 
