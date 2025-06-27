@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Feed.css';
 import { useAuth } from '../../context/AuthContext';
 import PostEditor from '../../components/PostEditor/PostEditor';
@@ -47,9 +47,16 @@ const initialPosts: Post[] = [
 
 const Feed: React.FC<FeedProps> = ({ onShowAuthModal, setAuthModalMode }) => {
   const { user } = useAuth();
-  const [posts, setPosts] = useState<Post[]>(initialPosts);
+  const [posts, setPosts] = useState<Post[]>(() => {
+    const stored = localStorage.getItem('posts');
+    return stored ? JSON.parse(stored) : initialPosts;
+  });
   const [input, setInput] = useState('');
   const [publishing, setPublishing] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('posts', JSON.stringify(posts));
+  }, [posts]);
 
   const handlePublish = () => {
     if (!user) {
