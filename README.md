@@ -9,11 +9,10 @@ This is a simple frontend app built using React, TypeScript, and TailwindCSS. It
 
 ## Live Preview
 
-[Live App Link](https://your-live-link.com)
+[Live App Link](https://your-live-link.com](https://ui-task-rust.vercel.app/)
 
-## GitHub Repo
+<img width="610" alt="image" src="https://github.com/user-attachments/assets/d9064116-7528-4c98-adc0-94b6574a3052" />
 
-[GitHub Repo](https://github.com/your-username/your-repo)
 
 ---
 
