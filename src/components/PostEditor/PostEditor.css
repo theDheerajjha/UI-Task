@@ -3,17 +3,17 @@
   max-width: 100%;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(60,60,60,0.06);
+  box-shadow: 0 4px 24px rgba(60, 60, 60, 0.06);
   border: 1.5px solid #ededed;
   margin-bottom: 32px;
   padding: 24px 24px 20px 24px;
-  transition: box-shadow 0.25s cubic-bezier(0.4,0.2,0.2,1), border-color 0.25s cubic-bezier(0.4,0.2,0.2,1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0.2, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .post-editor:hover,
 .post-editor:focus-within {
   border-color: #4f5be8;
-  box-shadow: 0 4px 32px 0 rgba(79,91,232,0.13), 0 0 0 3px rgba(79,91,232,0.10);
+  box-shadow: 0 4px 32px 0 rgba(79, 91, 232, 0.13), 0 0 0 3px rgba(79, 91, 232, 0.10);
   z-index: 2;
 }
 
@@ -138,15 +138,18 @@
     padding: 12px 4px 10px 4px;
     margin-bottom: 18px;
   }
+
   .post-editor-textarea {
     font-size: 14px;
     padding: 8px;
   }
+
   .post-editor-publish-button {
     font-size: 15px;
     padding: 7px 12px;
     border-radius: 6px;
   }
+
   .post-editor-toolbar {
     display: block;
     max-width: 100%;
@@ -157,9 +160,11 @@
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
+
   .post-editor-toolbar::-webkit-scrollbar {
     display: none;
   }
+
   .post-editor-toolbar-button,
   .post-editor-select {
     display: inline-block;
@@ -168,7 +173,8 @@
     font-size: 15px;
     vertical-align: middle;
   }
+
   .post-editor-toolbar-button.delete {
     margin-left: 4px;
   }
-} 
+}
